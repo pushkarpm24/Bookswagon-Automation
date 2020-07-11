@@ -30,7 +30,13 @@ namespace BooksWagon.Base
             driver.Url = booksWagonUrl;
         }
 
-        
+        [OneTimeTearDown]
+        public void Close()
+        {
+            Thread.Sleep(2000);
+            driver.Quit();
+
+        }
 
     }
 }

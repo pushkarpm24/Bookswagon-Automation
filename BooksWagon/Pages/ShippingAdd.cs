@@ -42,7 +42,7 @@ namespace BooksWagon.Pages
         public void AddressInfo()
         {
 
-
+            Thread.Sleep(5000);
             ContinueButton.Click();
             Thread.Sleep(2000);
             NameBox.SendKeys("Pushkar");

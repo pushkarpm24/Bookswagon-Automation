@@ -33,8 +33,6 @@ namespace BooksWagon.Pages
 
         public void AccountLogin()
         {
-
-
             LoginButton.Click();
             Thread.Sleep(2000);            
             EmailBox.SendKeys("moreypush24@gmail.com");
@@ -45,8 +43,6 @@ namespace BooksWagon.Pages
             Thread.Sleep(2000);
             HomeButton.Click();
             Thread.Sleep(2000);
-
-
         }
     }
 }

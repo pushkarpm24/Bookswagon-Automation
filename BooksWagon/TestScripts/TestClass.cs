@@ -24,17 +24,24 @@ namespace BooksWagon
         {
             HomePage home = new HomePage(driver);
             home.SelectAnyBook();
-            YourAccount a = new YourAccount(driver);
+           // YourAccount a = new YourAccount(driver);
         }
 
-        [Test,Order(2)]
+        [Test, Order(2)]
+        public void BookCartFrameTest()
+        {
+            BookCartFrame cart = new BookCartFrame(driver);
+            cart.CartFrame();
+        }
+
+        [Test,Order(3)]
         public void ShippingAddTest()
         {
             ShippingAdd ship = new ShippingAdd(driver);
             ship.AddressInfo();
         }
 
-        [Test, Order(3)]
+        [Test, Order(4)]
         public void ReviewOrderTest()
         {
             ReviewOrder review = new ReviewOrder(driver);

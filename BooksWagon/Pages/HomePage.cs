@@ -26,7 +26,7 @@ namespace BooksWagon.Pages
         public IWebElement SearchButton;
         [FindsBy(How = How.XPath, Using = "//div[@id='listSearchResult']//div[1]//div[2]//a[1]//img[1]")]
         public IWebElement BookImg;
-        [FindsBy(How = How.XPath, Using = "//a[@class='iframe cboxElement']//input[@class='btn-red']")]
+        [FindsBy(How = How.CssSelector, Using = "body.padtpfix:nth-child(2) form.allpagecover-form:nth-child(7) div.product-detail:nth-child(3) div.summary:nth-child(4) div.product-info div.action:nth-child(6) tr:nth-child(1) td:nth-child(1) div.btn-grp a.iframe.cboxElement > input.btn-red")]
         public IWebElement BookNowButton;
           
 
@@ -42,8 +42,9 @@ namespace BooksWagon.Pages
             Thread.Sleep(2000);
             BookImg.Click();
             Thread.Sleep(2000);
-                         
-           
+            BookNowButton.Click();
+            Thread.Sleep(5000);
+
         }
     }
 }
