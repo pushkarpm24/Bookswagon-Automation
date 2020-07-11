@@ -11,7 +11,6 @@ namespace BooksWagon.Pages
 {
     public class ReviewOrder
     {
-
         IWebDriver driver;
 
         public ReviewOrder(IWebDriver driver)
@@ -23,19 +22,14 @@ namespace BooksWagon.Pages
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_ShoppingCart_lvCart_savecontinue")]
         public IWebElement SaveAndContinue;
         [FindsBy(How = How.Id, Using = "ctl00_lnkbtnLogout")]
-        public IWebElement Logout;
-        
-
+        public IWebElement Logout;       
 
         public void ReviewAndSave()
         {
-
-
             SaveAndContinue.Click();
             Thread.Sleep(2000);
             Logout.Click();
-            Thread.Sleep(2000);
-            
-        }        
-    }   
+            Thread.Sleep(2000);            
+        }       
+    }  
 }

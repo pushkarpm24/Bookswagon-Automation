@@ -11,7 +11,6 @@ namespace BooksWagon
     [TestFixture]
     public class TestClass : BaseClass
     {
-
         [Test,Order(0)]        
         public void LoginPageTest()
         {
@@ -23,8 +22,7 @@ namespace BooksWagon
         public void HomePageTest()
         {
             HomePage home = new HomePage(driver);
-            home.SelectAnyBook();
-           // YourAccount a = new YourAccount(driver);
+            home.SelectAnyBook();            
         }
 
         [Test, Order(2)]

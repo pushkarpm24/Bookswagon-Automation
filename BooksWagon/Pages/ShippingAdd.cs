@@ -38,10 +38,8 @@ namespace BooksWagon.Pages
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_imgSaveNew")]
         public IWebElement SaveButton;
 
-
         public void AddressInfo()
         {
-
             Thread.Sleep(5000);
             ContinueButton.Click();
             Thread.Sleep(2000);
@@ -61,8 +59,6 @@ namespace BooksWagon.Pages
             Thread.Sleep(2000);
             SaveButton.Click();
             Thread.Sleep(2000);
-
-
         }
     }
 }

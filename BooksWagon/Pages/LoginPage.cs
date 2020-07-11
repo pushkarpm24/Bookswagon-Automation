@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using BooksWagon.JsonFile;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -30,14 +31,15 @@ namespace BooksWagon.Pages
         [FindsBy(How = How.Id, Using = "ctl00_imglogo")]
         public IWebElement HomeButton;
 
-
         public void AccountLogin()
         {
+            Credentials cred = new Credentials();
+
             LoginButton.Click();
             Thread.Sleep(2000);            
-            EmailBox.SendKeys("moreypush24@gmail.com");
+            EmailBox.SendKeys(cred.email);
             Thread.Sleep(2000);
-            Password.SendKeys("pushkaru24");
+            Password.SendKeys(cred.password);
             Thread.Sleep(2000);
             FinalLoginButton.Click();
             Thread.Sleep(2000);

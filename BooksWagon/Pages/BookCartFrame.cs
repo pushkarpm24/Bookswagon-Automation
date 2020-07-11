@@ -17,12 +17,9 @@ namespace BooksWagon.Pages
             this.driver = driver;
             PageFactory.InitElements(driver, this);
         }
-
-       // [FindsBy(How = How.XPath, Using = "//div[@id='colorbox']")]
-       // public IWebElement Frame;
+        
         [FindsBy(How = How.Id, Using = "BookCart_lvCart_imgPayment")]
         public IWebElement PlaceOrderButton;
-
 
         public void CartFrame()
         {

@@ -20,12 +20,9 @@ namespace BooksWagon.Base
         {
             ChromeOptions opt = new ChromeOptions();
             opt.AddArguments("--disable-notification");
-
             driver = new ChromeDriver(opt);
-
            // driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
-
             string booksWagonUrl = ConfigurationManager.AppSettings["url"];
             driver.Url = booksWagonUrl;
         }
@@ -35,8 +32,6 @@ namespace BooksWagon.Base
         {
             Thread.Sleep(2000);
             driver.Quit();
-
         }
-
     }
 }
