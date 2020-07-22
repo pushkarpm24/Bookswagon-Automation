@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BooksWagon.Pages
@@ -26,6 +27,7 @@ namespace BooksWagon.Pages
             IWebElement frame = driver.FindElement(By.CssSelector("body.padtpfix:nth-child(2) div:nth-child(1) div:nth-child(2) div:nth-child(2) div:nth-child(1) > iframe.cboxIframe"));
             driver.SwitchTo().Frame(frame);
             PlaceOrderButton.Click();
+             
         }
 
     }
