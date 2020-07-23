@@ -117,7 +117,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ScreenShot\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="ExtentReport\index.html" />
   </ItemGroup>
