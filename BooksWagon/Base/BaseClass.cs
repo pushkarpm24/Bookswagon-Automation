@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using BooksWagon.EmailSend;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -31,6 +32,7 @@ namespace BooksWagon.Base
         public void Close()
         {
             Thread.Sleep(2000);
+            SendMailClass.SendMail();
             driver.Quit();
         }
     }

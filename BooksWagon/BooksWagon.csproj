@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseClass.cs" />
+    <Compile Include="EmailSend\SendMailClass.cs" />
     <Compile Include="JsonFile\Credentials.cs" />
     <Compile Include="Pages\BookCartFrame.cs" />
     <Compile Include="Pages\ReviewOrder.cs" />

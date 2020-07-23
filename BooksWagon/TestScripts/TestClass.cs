@@ -3,6 +3,7 @@
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 using BooksWagon.Base;
+using BooksWagon.EmailSend;
 using BooksWagon.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -147,6 +148,7 @@ namespace BooksWagon
         public void ExtentClose()
         {
             extent.Flush();
+           
         }
     }
 }
