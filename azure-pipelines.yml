@@ -42,3 +42,6 @@ steps:
     searchFolder: '$(System.DefaultWorkingDirectory)'
     runTestsInIsolation: true
     codeCoverageEnabled: true
+    platform: '$(buildPlatform)'
+    configuration: '- task: VSTest@2 inputs: testSelector:'
+    
