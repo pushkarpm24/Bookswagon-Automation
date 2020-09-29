@@ -21,7 +21,7 @@ namespace BooksWagon.Pages
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_ShoppingCart_lvCart_savecontinue")]
         public IWebElement SaveAndContinue;
-        [FindsBy(How = How.Id, Using = "ctl00_lnkbtn")]
+        [FindsBy(How = How.Id, Using = "ctl00_lnkbtnLogout")]
         public IWebElement Logout;       
 
         public void ReviewAndSave()

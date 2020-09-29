@@ -36,7 +36,7 @@ namespace BooksWagon
                 LoginPage login = new LoginPage(driver);
                 login.AccountLogin();
                 test.Log(Status.Info, "Login Successfull..");
-
+                //Validation
                 string expectedPageTitle = "Online Bookstore | Buy Books Online | Read Books Online";
                 string actualPageTitle = driver.Title;
                 Assert.AreEqual(expectedPageTitle, actualPageTitle);
@@ -45,7 +45,7 @@ namespace BooksWagon
             catch (Exception e)
             {
                 test.Log(Status.Fail, e.ToString());
-                //taking screenshot anfter login
+                //taking screenshot 
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
                 ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\LoginPageTest.png", ScreenshotImageFormat.Png);
                 throw;
@@ -63,7 +63,7 @@ namespace BooksWagon
                 HomePage home = new HomePage(driver);
                 home.SelectAnyBook();
                 test.Log(Status.Info, "Book Added To Cart..");
-
+                //Validation
                 string expectedPageUrl = "https://www.bookswagon.com/book/landmark-judgments-that-changed-india/9788129135087";
                 string actualPageUrl = driver.Url;
                 Assert.AreEqual(expectedPageUrl, actualPageUrl);
@@ -72,7 +72,7 @@ namespace BooksWagon
             catch (Exception e)
             {
                 test.Log(Status.Fail, e.ToString());
-                //taking screenshot anfter login
+                //taking screenshot  
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
                 ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\HomePageTest.png", ScreenshotImageFormat.Png);
                 throw;
@@ -91,7 +91,7 @@ namespace BooksWagon
                 BookCartFrame cart = new BookCartFrame(driver);
                 cart.CartFrame();
                 test.Log(Status.Info, "Frame handled Successfully..");
-
+                //Validation
                 string expectedPageUrl = "https://www.bookswagon.com/book/landmark-judgments-that-changed-india/9788129135087";
                 string actualPageUrl = driver.Url;
                 Assert.AreEqual(expectedPageUrl, actualPageUrl);
@@ -100,7 +100,7 @@ namespace BooksWagon
             catch (Exception e)
             {
                 test.Log(Status.Fail, e.ToString());
-                //taking screenshot anfter login
+                //taking screenshot  
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
                 ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\BookCartFrameTest.png", ScreenshotImageFormat.Png);
                 throw;
@@ -118,7 +118,7 @@ namespace BooksWagon
                 ShippingAdd ship = new ShippingAdd(driver);
                 ship.AddressInfo();
                 test.Log(Status.Info, "Filled All The Credientials Successfully..");
-
+                //Validation
                 string expectedPageUrl = "https://www.bookswagon.com/viewshoppingcart.aspx";
                 string actualPageUrl = driver.Url;
                 Assert.AreEqual(expectedPageUrl, actualPageUrl);
@@ -127,7 +127,7 @@ namespace BooksWagon
             catch (Exception e)
             {
                 test.Log(Status.Fail, e.ToString());
-                //taking screenshot anfter login
+                //taking screenshot 
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
                 ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ShippingAddTest.png", ScreenshotImageFormat.Png);
                 throw;
@@ -145,14 +145,15 @@ namespace BooksWagon
                 ReviewOrder review = new ReviewOrder(driver);
                 review.ReviewAndSave();
                 test.Log(Status.Info, "Logout Successfull..");
-
+                //Validation
                 Assert.IsTrue(driver.FindElement(By.Id("ctl00_phBody_SignIn_btnLogin")).Displayed);
                 test.Log(Status.Pass, "ReviewOrder Test Passed.."); //shows the pass status in report
+                
             }
             catch (Exception e)
             {
                 test.Log(Status.Fail, e.ToString());
-                //taking screenshot anfter login
+                //taking screenshot 
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
                 ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ReviewOrderTest.png", ScreenshotImageFormat.Png);
                 throw;
@@ -162,7 +163,8 @@ namespace BooksWagon
         [OneTimeTearDown]
         public void ExtentClose()
         {
-            extent.Flush();           
+            extent.Flush();
+           
         }
     }
 }
