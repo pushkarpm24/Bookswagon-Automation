@@ -46,8 +46,8 @@ namespace BooksWagon
             {
                 test.Log(Status.Fail, e.ToString());
                 //taking screenshot 
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\LoginPageTest.png", ScreenshotImageFormat.Png);
+              //  Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+              //  ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\LoginPageTest.png", ScreenshotImageFormat.Png);
                 throw;
             }
         }
@@ -73,8 +73,8 @@ namespace BooksWagon
             {
                 test.Log(Status.Fail, e.ToString());
                 //taking screenshot  
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\HomePageTest.png", ScreenshotImageFormat.Png);
+               // Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+              //  ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\HomePageTest.png", ScreenshotImageFormat.Png);
                 throw;
             }
 
@@ -101,8 +101,8 @@ namespace BooksWagon
             {
                 test.Log(Status.Fail, e.ToString());
                 //taking screenshot  
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\BookCartFrameTest.png", ScreenshotImageFormat.Png);
+              //  Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+              //  ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\BookCartFrameTest.png", ScreenshotImageFormat.Png);
                 throw;
             }
         }
@@ -128,8 +128,8 @@ namespace BooksWagon
             {
                 test.Log(Status.Fail, e.ToString());
                 //taking screenshot 
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ShippingAddTest.png", ScreenshotImageFormat.Png);
+              //  Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+              //  ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ShippingAddTest.png", ScreenshotImageFormat.Png);
                 throw;
             }
         }
@@ -154,8 +154,8 @@ namespace BooksWagon
             {
                 test.Log(Status.Fail, e.ToString());
                 //taking screenshot 
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ReviewOrderTest.png", ScreenshotImageFormat.Png);
+               // Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+              //  ss.SaveAsFile("C:\\Users\\HP\\source\\repos\\BooksWagon\\BooksWagon\\ScreenShot\\ReviewOrderTest.png", ScreenshotImageFormat.Png);
                 throw;
             }
         }
