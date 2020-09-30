@@ -23,6 +23,14 @@ namespace BooksWagon.Base
             driver.Url = booksWagonUrl;
         }
 
+        [TearDown]
+        public void TearDown()
+        {
+            var filepath = $"{ TestContext.CurrentContext.TestDirectory}\\{TestContext.CurrentContext.Test.MethodName}.jpg";
+            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile(filepath);
+            TestContext.AddTestAttachment(filepath, "Test Screenshots");
+        }
+
         [OneTimeTearDown]
         public void Close()
         {

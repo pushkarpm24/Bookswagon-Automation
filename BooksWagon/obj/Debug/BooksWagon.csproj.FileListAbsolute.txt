@@ -37,3 +37,4 @@ C:\Users\HP\source\repos\BooksWagon\BooksWagon\obj\Debug\BooksWagon.csproj.CoreC
 C:\Users\HP\source\repos\BooksWagon\BooksWagon\obj\Debug\BooksWagon.csproj.CopyComplete
 C:\Users\HP\source\repos\BooksWagon\BooksWagon\obj\Debug\BooksWagon.dll
 C:\Users\HP\source\repos\BooksWagon\BooksWagon\obj\Debug\BooksWagon.pdb
+C:\Users\HP\source\repos\BooksWagon\BooksWagon\obj\Debug\BooksWagon.csprojAssemblyReference.cache
